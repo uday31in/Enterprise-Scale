@@ -1,0 +1,58 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "TenantId": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/Legacy",
+            "Name": "Legacy",
+            "DisplayName": "Legacy",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+                "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+                "DisplayName": "msdn-udpandya",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/contoso",
+            "Name": "contoso",
+            "DisplayName": "contoso",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/TEST1",
+            "Name": "TEST1",
+            "DisplayName": "TEST1",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

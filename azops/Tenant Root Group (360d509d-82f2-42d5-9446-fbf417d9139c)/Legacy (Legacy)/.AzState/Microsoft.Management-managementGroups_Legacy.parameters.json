@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/Legacy",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "Legacy",
+        "TenantId": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "Legacy",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c",
+        "ParentName": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "DisplayName": "msdn-udpandya",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

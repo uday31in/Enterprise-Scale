@@ -34,7 +34,7 @@
               "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Append-KV-SoftDelete",
               "Properties": {
                 "Description": "When a Key Vault is created with out soft delete enabled then this will add it.",
-                "DisplayName": "Append-KV-SoftDelete",
+                "DisplayName": "Append-KV-SoftDelete1",
                 "Mode": "All",
                 "Parameters": {},
                 "PolicyRule": {

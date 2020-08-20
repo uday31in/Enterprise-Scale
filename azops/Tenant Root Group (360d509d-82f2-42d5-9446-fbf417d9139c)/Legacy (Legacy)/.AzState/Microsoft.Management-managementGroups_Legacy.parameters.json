@@ -28,7 +28,20 @@
           "policySetDefinitions": [],
           "policyAssignments": [],
           "roleDefinitions": [],
-          "roleAssignments": []
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/Legacy/providers/Microsoft.Authorization/roleAssignments/b7e0a13f-f6e3-47b3-b1c8-fa1a5c4ae582",
+              "Name": "b7e0a13f-f6e3-47b3-b1c8-fa1a5c4ae582",
+              "properties": {
+                "DisplayName": "Uday Pandya",
+                "ObjectType": "User",
+                "PrincipalId": "afc0dd69-cf53-446e-b983-6ec1504d0945",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
         }
       }
     }

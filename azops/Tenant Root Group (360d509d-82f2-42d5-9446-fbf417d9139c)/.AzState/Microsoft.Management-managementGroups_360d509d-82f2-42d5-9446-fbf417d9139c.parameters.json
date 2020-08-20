@@ -40,7 +40,7 @@
                 "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/portal-created-mg",
                 "Name": "portal-created-mg",
-                "DisplayName": "portal-created-mg",
+                "DisplayName": "portal-created-mg-rename",
                 "Children": null
               }
             ]

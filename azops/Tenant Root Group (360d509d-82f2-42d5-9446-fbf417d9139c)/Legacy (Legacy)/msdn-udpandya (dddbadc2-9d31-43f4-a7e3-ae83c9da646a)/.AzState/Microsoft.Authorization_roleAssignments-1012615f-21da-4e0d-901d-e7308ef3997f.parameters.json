@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/providers/Microsoft.Authorization/roleAssignments/1012615f-21da-4e0d-901d-e7308ef3997f",
+        "Name": "1012615f-21da-4e0d-901d-e7308ef3997f",
+        "properties": {
+          "DisplayName": "wvdadmin",
+          "ObjectType": "User",
+          "PrincipalId": "27339ca6-41dd-47f0-aa9e-de7fdb30554a",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

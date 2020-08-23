@@ -4,12 +4,12 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/portal-created-mg/providers/Microsoft.Authorization/roleAssignments/ad6e042e-d7c1-4c3b-9750-c46aba41f31e",
-        "Name": "ad6e042e-d7c1-4c3b-9750-c46aba41f31e",
+        "Id": "/providers/Microsoft.Management/managementGroups/EMEA/providers/Microsoft.Authorization/roleAssignments/ead459b1-10cc-4a2e-93b6-29bbaa1ee786",
+        "Name": "ead459b1-10cc-4a2e-93b6-29bbaa1ee786",
         "properties": {
-          "DisplayName": "Uday Pandya",
-          "ObjectType": "User",
-          "PrincipalId": "afc0dd69-cf53-446e-b983-6ec1504d0945",
+          "DisplayName": "git-csunorthstar",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "d9a87072-16dc-4f9f-8133-d2e64eb18ac5",
           "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
           "RoleDefinitionName": "Owner"
         },

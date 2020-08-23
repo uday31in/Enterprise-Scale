@@ -4,8 +4,8 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/TEST1/providers/Microsoft.Authorization/roleAssignments/52af4b64-e781-4c47-a26a-69615fbfacfe",
-        "Name": "52af4b64-e781-4c47-a26a-69615fbfacfe",
+        "Id": "/providers/Microsoft.Management/managementGroups/APAC/providers/Microsoft.Authorization/roleAssignments/5d9d0047-4d92-4d67-9420-61775f0131d0",
+        "Name": "5d9d0047-4d92-4d67-9420-61775f0131d0",
         "properties": {
           "DisplayName": "git-csunorthstar",
           "ObjectType": "ServicePrincipal",

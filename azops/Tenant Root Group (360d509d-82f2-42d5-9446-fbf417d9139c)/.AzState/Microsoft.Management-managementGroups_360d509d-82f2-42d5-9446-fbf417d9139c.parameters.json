@@ -28,6 +28,13 @@
                 "DisplayName": "SANDBOX",
                 "Children": [
                   {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/PCI",
+                    "Name": "PCI",
+                    "DisplayName": "PCI",
+                    "Children": null
+                  },
+                  {
                     "Type": "/subscriptions",
                     "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
                     "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",

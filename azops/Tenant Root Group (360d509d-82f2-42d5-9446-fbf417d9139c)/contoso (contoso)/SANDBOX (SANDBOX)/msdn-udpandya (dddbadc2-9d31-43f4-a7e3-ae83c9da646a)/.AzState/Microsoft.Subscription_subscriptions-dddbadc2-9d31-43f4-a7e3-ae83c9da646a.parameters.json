@@ -55,7 +55,7 @@
               "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/providers/Microsoft.Authorization/roleAssignments/ca909e9a-d55b-41be-8830-54d835362062",
               "Name": "ca909e9a-d55b-41be-8830-54d835362062",
               "properties": {
-                "DisplayName": {},
+                "DisplayName": null,
                 "ObjectType": "Unknown",
                 "PrincipalId": "278d33bb-378d-4115-b6b0-815af4462f60",
                 "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",

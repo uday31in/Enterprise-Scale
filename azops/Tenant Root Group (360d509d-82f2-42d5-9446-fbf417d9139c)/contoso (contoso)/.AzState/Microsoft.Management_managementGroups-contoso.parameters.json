@@ -167,20 +167,18 @@
           "policySetDefinitions": [],
           "policyAssignments": [],
           "roleDefinitions": [],
-          "roleAssignments": [
-            {
-              "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/02d4c2a7-d6df-4470-9daf-d7c7010dfb1e",
-              "Name": "02d4c2a7-d6df-4470-9daf-d7c7010dfb1e",
-              "properties": {
-                "DisplayName": "Uday Pandya",
-                "ObjectType": "User",
-                "PrincipalId": "afc0dd69-cf53-446e-b983-6ec1504d0945",
-                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-                "RoleDefinitionName": "Owner"
-              },
-              "ResourceType": "Microsoft.Authorization/roleAssignments"
-            }
-          ]
+          "roleAssignments": {
+            "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/02d4c2a7-d6df-4470-9daf-d7c7010dfb1e",
+            "Name": "02d4c2a7-d6df-4470-9daf-d7c7010dfb1e",
+            "properties": {
+              "DisplayName": "Uday Pandya",
+              "ObjectType": "User",
+              "PrincipalId": "afc0dd69-cf53-446e-b983-6ec1504d0945",
+              "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+              "RoleDefinitionName": "Owner"
+            },
+            "ResourceType": "Microsoft.Authorization/roleAssignments"
+          }
         }
       }
     }

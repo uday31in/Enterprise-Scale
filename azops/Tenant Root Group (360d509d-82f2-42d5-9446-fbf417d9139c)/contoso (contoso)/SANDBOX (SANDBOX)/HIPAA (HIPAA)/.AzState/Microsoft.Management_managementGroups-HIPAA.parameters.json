@@ -20,18 +20,20 @@
           "policySetDefinitions": [],
           "policyAssignments": [],
           "roleDefinitions": [],
-          "roleAssignments": {
-            "Id": "/providers/Microsoft.Management/managementGroups/HIPAA/providers/Microsoft.Authorization/roleAssignments/eb01c220-a91a-4587-9f8c-8bc38eb3aaf0",
-            "Name": "eb01c220-a91a-4587-9f8c-8bc38eb3aaf0",
-            "properties": {
-              "DisplayName": "git-csunorthstar",
-              "ObjectType": "ServicePrincipal",
-              "PrincipalId": "d9a87072-16dc-4f9f-8133-d2e64eb18ac5",
-              "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-              "RoleDefinitionName": "Owner"
-            },
-            "ResourceType": "Microsoft.Authorization/roleAssignments"
-          }
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/HIPAA/providers/Microsoft.Authorization/roleAssignments/eb01c220-a91a-4587-9f8c-8bc38eb3aaf0",
+              "Name": "eb01c220-a91a-4587-9f8c-8bc38eb3aaf0",
+              "properties": {
+                "DisplayName": "git-csunorthstar",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "d9a87072-16dc-4f9f-8133-d2e64eb18ac5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
         }
       }
     }

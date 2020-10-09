@@ -16,6 +16,18 @@
           "roleDefinitions": [],
           "roleAssignments": [
             {
+              "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/providers/Microsoft.Authorization/roleAssignments/0306bf02-5d19-4ece-b864-b25f2ffcb79a",
+              "Name": "0306bf02-5d19-4ece-b864-b25f2ffcb79a",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "830cfc65-0a6b-431b-bbc6-5630d0c7f4b6",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
               "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/providers/Microsoft.Authorization/roleAssignments/21f90de2-876d-4c90-a2e5-92aa09779bf6",
               "Name": "21f90de2-876d-4c90-a2e5-92aa09779bf6",
               "properties": {

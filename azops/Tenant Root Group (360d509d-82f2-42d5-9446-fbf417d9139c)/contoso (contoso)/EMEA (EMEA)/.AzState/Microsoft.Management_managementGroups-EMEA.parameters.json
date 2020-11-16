@@ -1,0 +1,41 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/EMEA",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "EMEA",
+        "TenantId": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "EMEA",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/contoso",
+        "ParentName": "contoso",
+        "ParentDisplayName": "contoso",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/EMEA/providers/Microsoft.Authorization/roleAssignments/ead459b1-10cc-4a2e-93b6-29bbaa1ee786",
+              "Name": "ead459b1-10cc-4a2e-93b6-29bbaa1ee786",
+              "properties": {
+                "DisplayName": "git-csunorthstar",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "d9a87072-16dc-4f9f-8133-d2e64eb18ac5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

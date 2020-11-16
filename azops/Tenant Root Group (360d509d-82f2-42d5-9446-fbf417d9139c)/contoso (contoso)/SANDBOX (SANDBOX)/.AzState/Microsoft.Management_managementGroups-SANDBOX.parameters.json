@@ -1,0 +1,56 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/SANDBOX",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "SANDBOX",
+        "TenantId": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "SANDBOX",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/contoso",
+        "ParentName": "contoso",
+        "ParentDisplayName": "contoso",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/HIPAA",
+            "Name": "HIPAA",
+            "DisplayName": "HIPAA",
+            "Children": null
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "DisplayName": "msdn-udpandya",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/SANDBOX/providers/Microsoft.Authorization/roleAssignments/60b38d49-fcba-4ed2-b79f-74229cf4d804",
+              "Name": "60b38d49-fcba-4ed2-b79f-74229cf4d804",
+              "properties": {
+                "DisplayName": "git-csunorthstar",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "d9a87072-16dc-4f9f-8133-d2e64eb18ac5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

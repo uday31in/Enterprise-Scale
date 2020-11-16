@@ -1,0 +1,168 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "contoso",
+        "TenantId": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "contoso",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c",
+        "ParentName": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/SANDBOX",
+            "Name": "SANDBOX",
+            "DisplayName": "SANDBOX",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/HIPAA",
+                "Name": "HIPAA",
+                "DisplayName": "HIPAA",
+                "Children": null
+              },
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+                "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+                "DisplayName": "msdn-udpandya",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/NORTHAMERICA",
+            "Name": "NORTHAMERICA",
+            "DisplayName": "NORTHAMERICA",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/APAC",
+            "Name": "APAC",
+            "DisplayName": "APAC",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/EMEA",
+            "Name": "EMEA",
+            "DisplayName": "EMEA",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [
+            {
+              "Name": "Append-KV-SoftDelete",
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Append-KV-SoftDelete",
+              "ResourceName": "Append-KV-SoftDelete",
+              "ResourceType": "Microsoft.Authorization/policyDefinitions",
+              "SubscriptionId": null,
+              "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Append-KV-SoftDelete",
+              "Properties": {
+                "Description": "When a Key Vault is created with out soft delete enabled then this will add it.",
+                "DisplayName": "Append-KV-SoftDelete1",
+                "Mode": "All",
+                "Parameters": {},
+                "PolicyRule": {
+                  "if": {
+                    "anyOf": [
+                      {
+                        "allOf": [
+                          {
+                            "field": "type",
+                            "equals": "Microsoft.KeyVault/vaults"
+                          },
+                          {
+                            "field": "Microsoft.KeyVault/vaults/enableSoftDelete",
+                            "notEquals": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "then": {
+                    "effect": "append",
+                    "details": [
+                      {
+                        "field": "Microsoft.KeyVault/vaults/enableSoftDelete",
+                        "value": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "Name": "Deny-AppGW-Without-WAF",
+              "ResourceId": "/providers/Microsoft.Management/managementgroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deny-AppGW-Without-WAF",
+              "ResourceName": "Deny-AppGW-Without-WAF",
+              "ResourceType": "Microsoft.Authorization/policyDefinitions",
+              "SubscriptionId": null,
+              "PolicyDefinitionId": "/providers/Microsoft.Management/managementgroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deny-AppGW-Without-WAF",
+              "Properties": {
+                "Description": "",
+                "DisplayName": "Deny-AppGW-Without-WAF",
+                "Mode": "All",
+                "Parameters": null,
+                "PolicyRule": {
+                  "if": {
+                    "allOf": [
+                      {
+                        "equals": "Microsoft.Network/applicationGateways",
+                        "field": "type"
+                      },
+                      {
+                        "field": "Microsoft.Network/applicationGateways/sku.name",
+                        "notequals": "WAF_v2"
+                      }
+                    ]
+                  },
+                  "then": {
+                    "effect": "Deny"
+                  }
+                }
+              }
+            },
+            {
+              "Name": "Deny-ERPeering",
+              "ResourceId": "/providers/Microsoft.Management/managementgroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deny-ERPeering",
+              "ResourceName": "Deny-ERPeering",
+              "ResourceType": "Microsoft.Authorization/policyDefinitions",
+              "SubscriptionId": null,
+              "PolicyDefinitionId": "/providers/Microsoft.Management/managementgroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deny-ERPeering",
+              "Properties": {
+                "Description": "Denies creation of ER Peerings under the assigned scope.",
+                "DisplayName": "Deny-ERPeering",
+                "Mode": "All",
+                "Parameters": null,
+                "PolicyRule": {
+                  "if": {
+                    "equals": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+                    "field": "type"
+                  },
+                  "then": {
+                    "effect": "deny"
+                  }
+                }
+              }
+            }
+          ],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

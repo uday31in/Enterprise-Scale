@@ -1,7 +1,5 @@
 # Azure DevOps - Setup Guide
 
-> Support for Azure DevOps is currently in ***preview***
-
 Please complete the following steps at [Configure Azure permissions for ARM tenant deployments](setup-github.md) page before continuing:
 
 * Step 3 - Create SPN and Grant Permission
@@ -33,17 +31,16 @@ We recommend naming these pipelines `AzOps - Pull` & `AzOps - Push`.
 
 Add a new secret variable to each of the pipelines:
 
-* AZURE_CREDENTIALS
+* AZURE_CREDENTIALS   (escape the quotes in the json string from `"` to  `\"` )
 
 Set the value to the JSON string created by the steps in the [GitHub - Setup Guide](setup-github.md).
-
- > Important: The JSON must have the double quotes escaped with a backslash, e.g. `"` becomes `\"`
 
 ### Configure repository permissions
 
 The build service account `<Project> Build Service (<Organization>)` must have the following permissions on the repository:
 
 * `<Project>\Contributors`
+
 
 ### Configure branch policies
 
@@ -63,4 +60,4 @@ The following steps will be executed automatically to ensure that the current Az
 * If changes are detected that is not represented in your `main` branch, it will create `system` branch representing your current configuration as ARM templates parameter file.
 * Create a Pull Request (PR) with the name `Azure Change Notification` (`system`  -> `main`) and auto-merge into `main`.
 
-Please now continue on the [Discover Environment](discover-environemnt.md#verify-pr-and-merge-with-main-branch) page, at the *"Verify PR and merge with `main` branch"* heading.
+Please now continue on the [Discover Environment](discover-environment.md#verify-pr-and-merge-with-main-branch) page, at the *"Verify PR and merge with `main` branch"* heading.
